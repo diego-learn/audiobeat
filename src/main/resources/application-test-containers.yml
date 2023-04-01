@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    #    platform: MySQL
+#    url: jdbc:mysql://localhost:3307/AUDIOBEAT
+    url: jdbc:mysql://localhost:3307/AUDIOBEAT
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+
+#  flyway:
+#    enabled: false

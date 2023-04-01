@@ -1,0 +1,63 @@
+server:
+  port: 8081
+
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
+    include-exception: false
+
+spring:
+  main:
+    banner-mode: off
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+
+  profiles:
+    active: local
+
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  datasource:
+    #    platform: MySQL
+    url: jdbc:mysql://34.172.27.148:3306/AUDIOBEAT
+    username: audiobeat
+    password: audiobeat
+    driverClassName: com.mysql.jdbc.Driver
+
+
+gcp:
+  config:
+    file: gcp-account-file.json
+  project:
+    id: imposing-pipe-356718
+  bucket:
+    id: media-bucket-007
+  dir:
+    name: dev
+
+#  flyway:
+#    sql-migration-prefix: V
+#    sql-migration-suffixes: .sql
+#    repeatable-sql-migration-prefix: R
+#    sql-migration-separator: __
+#    enabled: true
+#    baseline-on-migrate: true
+#    schemas: AUDIOBEAT
+
+
+
+
+

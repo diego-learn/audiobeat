@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "audiobeat1",
+  "private_key_id": "6bada92556e961922e695dc14d75d30461446053",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDTb7l5uhYLhvpB\napQ1NAaN92X4gGENVqlYCF1rRsUEisd6CDJa8NeOkdljY5FcglMV43HGdTEj/SM7\n7RslECuxfodkyDHWgEYY84p4yL2EMuZ5kXZdWjF3JsT94KwJf45NN/ky9zDtuwNY\nfsU3sDEkTnWvIa0HS3hGw0ctz9ipuguqmcuPG3p3fXSULHTisP8MDNm7BXLOUzlZ\nogTlrmh8PqFtc3fmYoE36yW8BCtL7cRfdXrKT/rFpYNEa3S8u2Qc3k2NKF0w64FM\nqzsNCo+Ha3iFHQK0HWs6MuK2w3Mx/jBhZqUKo5j8LsPXFjUp8TANdAbEPFfRv5hh\nwih38MoXAgMBAAECggEAGOeekcOFCDuQa7cpmPC1WvCKrtA0XlVYYhmuI041M7lD\nENE5WTPoOA9e61GVlC93qOrfAnDYZnRRO6RMn7t9Yg1U1l6sXCdE2niJVXvTsugp\n9KTZK9rNW8sRxhO6P+4p7VeL/2BVf5MZLEnWYh5bU3r4arYNQwA1PSSQVEmYrDka\niXRupiimuWtD5bFYL/8LW8m5DRAqgx4GV7InfExjFIB8V/wfaxIRi/UX915f5GTZ\n7Dhra5hkbv1J1hMJUoM5clGYjQnOKDDHTjjVB0iy7XhjUdGrgQZFOm4JWh14nMy5\naI29XWZdiLwR3X/9Em+G3ilNK2x/qu7jCJhAFUUcOQKBgQDrvZvuiSGrv3TA7HH6\nAk4rsxRwJTaabi8CI/LNh6mxIgFVQVJ0OzQq/iE5XMi52A0wsLuhwKs/5XlZV0NM\nxjhBqdHb20NK6XnkVK8x2aNWrsWcK9/bAvMSwOEC75ziImpNs0IOTvmZRBBr2g8n\nb1xGthCE8LLYouVeTit0NXfBeQKBgQDlm2mKGMklH0UhZGZmVmNYK4ShRcduS4eS\nmVay5nANMrDPAB+CNh3q2AUwDveM4sx0AnvYaDacr1U93JzkeZ6k+gUJXEG4wZ4Z\n5JAqbRDTdksRazJmTAKGewkWzngKPsYSBwfjncbaSq2Nxq26Mb+yrtEVILwEaq0g\naL3DlIcUDwKBgE6aXk/e8Zcus2NQc4CFHEN95qauAdLkQlBYZDEbtv0U9ZTTvwZ6\nZx6etb1Grrcozt0ZULbSY0de4GNlsU78GO3sDcldBscHqljz06avhsL0a3dzOaTx\nCtOJ9HziIFFWYFOgHbpfouHzy/XqM3tWqlH5ivCIwVlyl0AmmF6bJV8hAoGAVl01\nvn8CMddoPl4wci/uYDzGP48qq573WLoatWIeJai6frIyJ91JNYuZr/EBRloMw1on\n0UepuxfsPT+dOAdTGAT/Hf04r1EMsfqaC4tIt/GX3O5wX7AZhxICYjS5TEk+YYuJ\neSFgqb1LOLfRouaRj5lYBdVxQ0wI4NblAgr9IBsCgYBTylxC1H/CKoe+W4YzkmBs\nrD4tVduvyGnkRePenVsWjIe0k8uuXFJi4VN1/aLjFzbyNVyEwefsuzK91dly6bvG\ngm/Tz+9Cf5jt2gaAEe5wtvJRsMgwEPJv1VP17ZAqcZ7Nl21ZngRhekjUjXWzBE6H\nlJTQf/Q/fIq4KES2DPs3FA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "account-storage@audiobeat1.iam.gserviceaccount.com",
+  "client_id": "111589004857513492428",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/account-storage%40audiobeat1.iam.gserviceaccount.com"
+}
