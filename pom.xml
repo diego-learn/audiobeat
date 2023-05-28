@@ -8,7 +8,8 @@
         <version>2.7.9</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>br.com.audiobeat</groupId>
+
+    <groupId>br.com.audiobeatapi</groupId>
     <artifactId>audiobeat</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -21,19 +22,11 @@
 
 
     <modules>
-        <module>module-api</module>
+        <module>audiobeat-api</module>
     </modules>
 
 
     <dependencies>
-
-
-<!--        <dependency>-->
-<!--            <groupId>br.com.audiobeat</groupId>-->
-<!--            <artifactId>module-api</artifactId>-->
-<!--            <version>0.0.1-SNAPSHOT</version>-->
-<!--        </dependency>-->
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -43,6 +36,7 @@
         <!--            <groupId>org.springframework.boot</groupId>-->
         <!--            <artifactId>spring-boot-devtools</artifactId>-->
         <!--        </dependency>-->
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -143,17 +137,46 @@
 
             <plugins>
                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <executions>
+                        <execution>
+                            <id>copy</id>
+                            <phase>install</phase>
+                            <goals>
+                                <goal>copy-resources</goal>
+                            </goals>
+                            <configuration>
+                                <outputDirectory>
+                                    appengine
+                                </outputDirectory>
+                                <resources>
+                                    <resource>
+                                        <directory>${basedir}/audiobeat-api/target/</directory>
+                                        <includes>
+                                            <include>*.*</include>
+                                        </includes>
+                                    </resource>
+                                </resources>
+<!--                                <outputDirectory>-->
+<!--                                    ${project.build.directory}/appengine-staging-->
+<!--                                </outputDirectory>-->
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-    <!--                <executions>-->
-    <!--                    <execution>-->
-    <!--                        <goals>-->
-    <!--                            <goal>repackage</goal>-->
-    <!--                        </goals>-->
-    <!--                    </execution>-->
-    <!--                </executions>-->
+<!--                    <executions>-->
+<!--                        <execution>-->
+<!--                            <goals>-->
+<!--                                <goal>repackage</goal>-->
+<!--                            </goals>-->
+<!--                        </execution>-->
+<!--                    </executions>-->
                     <configuration>
-                        <mainClass>com.br.audiobeatapi.AudiobeatApiApplication</mainClass>
+<!--                        <mainClass>com.br.audiobeat.AudiobeatApplication</mainClass>-->
                         <excludes>
                             <exclude>
                                 <groupId>org.projectlombok</groupId>
@@ -167,6 +190,10 @@
                     <artifactId>appengine-maven-plugin</artifactId>
                     <version>2.4.4</version>
                     <configuration>
+                        <services>
+<!--                        <service>audiobeat-api/target/${project.name}-${project.version}</service>-->
+                        <service>audiobeat-api/target/audiobeat-api-0.0.1-SNAPSHOT.jar</service>
+                        </services>
                         <version>GCLOUD_CONFIG</version>
                         <projectId>GCLOUD_CONFIG</projectId>
                     </configuration>
